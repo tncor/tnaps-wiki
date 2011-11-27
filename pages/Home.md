@@ -1,5 +1,3 @@
-# TNAPS Documentation
-
 TNAPS is a free cross-platform application server for .NET, Mono, and Java*, with excellent component-driven architecture.
 
 With TNAPS, server application development is easier than ever - you create your own components or get existing ones from TNAPS Marketplace and combine them into a single application. Imagine building your application from fully-documented and 100% compatible blocks - that’s what building with TNAPS feels like.
