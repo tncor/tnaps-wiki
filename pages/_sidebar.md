@@ -1,3 +1,3 @@
-* [[Riak]]
-* [[Webmachine]]
-* [[Contact Basho]]
+* [[TNAPS]]
+* [[Wow]]
+* [[Test]]
