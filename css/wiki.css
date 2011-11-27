@@ -1,0 +1,10 @@
+.article {
+    float: center;
+    display: inline-block;
+}
+
+div .sidebar {
+    float: left;    
+    display: inline-block;
+    width: 250px;
+}
