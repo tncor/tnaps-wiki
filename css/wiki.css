@@ -17,6 +17,7 @@
 
 .sidebar nav ul {
     list-style: none;
+    padding-left: 25px;
 }
     
 .sidebar nav li.collapsed {
@@ -35,4 +36,14 @@
 .sidebar nav ul li ul li a {
     color: #444444;
 	font-weight: normal;
+}
+.sidebar p a {
+    color: #444444;
+    font-size: 11px;
+}
+.sidebar p {
+    margin: 0;
+    padding: 0;
+    padding-left: 25px;
+    padding-bottom: 5px;
 }
