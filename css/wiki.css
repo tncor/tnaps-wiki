@@ -1,10 +1,38 @@
 .article {
-    float: center;
-    display: inline-block;
+    float:center;
+	display:inline-block;
+	width:650px;
+}
+.sidebar {
+	float:left;
+	display:inline-block;
+    padding-right: 20px;
+	width:230px;
+}
+.sidebar nav li {
+	border-bottom:1px solid lightgray;
+    padding-bottom: 5px;
+    padding-top: 5px;
 }
 
-div .sidebar {
-    float: left;    
-    display: inline-block;
-    width: 250px;
+.sidebar nav ul {
+    list-style: none;
+}
+    
+.sidebar nav li.collapsed {
+	list-style-image:url("../img/collapsed-arrow.png");
+}
+.sidebar nav .sidebar li.expanded {
+	list-style-image:url("../img/expanded-arrow.png");
+}
+.sidebar nav ul li a {
+    color: #444444;
+	font-weight:bold;
+	padding:0;
+	border:none;
+	display:inline;
+}
+.sidebar nav ul li ul li a {
+    color: #444444;
+	font-weight: normal;
 }

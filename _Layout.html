@@ -72,7 +72,7 @@
 			<li class="item39"><a href="/en/tnaps"><span>What is Tnaps?</span></a></li>
 			<li class="item61"><a href="/en/tnaps/blog/"><span>Blog</span></a></li>
 			<li class="item62"><a href="/en/tnaps/how-to"><span>How-To</span></a></li>
-            <li id="current" class="item64 active"><a href="/en/tnaps/how-to"><span>Documentation</span></a></li>
+			<li id="current" class="item64 active"><a href="/en/tnaps/how-to"><span>Documentation</span></a></li>
 			<li class="item54"><a href="/en/tnaps/download"><span>Download</span></a></li>
 		</ul>
 	</div>
@@ -80,7 +80,7 @@
 <div id="bodywrap">
 	<div id="page-title">
 		<div class="moduletable">
-			<h1 style="">{{ page.title }}</h1>
+			<a href="/"><h1 style="">TNAPS Documentation</h1></a>
 		</div>
 	</div>
 </div>
@@ -90,29 +90,16 @@
 <div class="splitter-line">
 </div>
 <!-- body -->
-<div id="bodywrap">
-	<div id="bodycontainerbg">
-		<div id="bodycontainer">
-			<div id="body">
-        
-                <div class="contentpaneopen">
-
-                <div class="sidebar">
-                      {{ page.sidebar }}
-                </div>
-                <article class="article">
-          <hgroup>
-            <h1>{{ page.title }}</h1>
-            <div class="clearfix"></div>
-          </hgroup>
-
-          {{ page.content }}
-</article>
-            
-        </div>
-				
-
+<div id="container" class="bodywrap">
+	<div class="bodycontainer">
+		<div id="sidebar" class="sidebar">
+            <nav>
+			 {{ page.sidebar }}
+             </nav>
 		</div>
+		<article class="article">
+		{{ page.content }} 
+        </article>
 	</div>
 </div>
 <div id="footerwrap">
@@ -124,43 +111,10 @@
 <div id="copyright" class="copyright-blue">
 	<div class="moduletable_copyright">
 		<p>
-			Copyright © 2011 TN LLC, All Rights Reserved.
+			 Copyright © 2011 TN LLC, All Rights Reserved.
 		</p>
 	</div>
 </div>
-<a id="github-ribbon" href="http://github.com/tncor/tnaps-wiki">Fork me on GitHub</a>
-<div id="container">
-	<header>
-	<h1><a href="/"><img src="{{ wiki.base_path }}images/logo_wiki.png" alt="tnaps"></a></h1>
-	</header>
-	<div id="main">
-		<nav id="sidebar" class="wiki">
-		{{ page.sidebar }} </nav>
-		<article>
-		<hgroup>
-		<h1>{{ page.title }}</h1>
-		<div class="clearfix">
-		</div>
-		</hgroup>
-		{{ page.content }} </article>
-		<div class="clearfix">
-		</div>
-	</div>
-</div>
-<!--! end of #container -->
-<footer>
-<p>
-	TN, LLC<br/>
-	22a-407 Postysheva st., Kahabrovsk, Russia, 680030<br/>
-	+7 (4212) 41-31-55<br/>
-	<br/>
-	This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0 Unported License</a>. <br/>
-	Copyright &copy;
-	<script type="text/javascript" language="javascript">d = new Date;document.write(d.getFullYear());</script>
-	 TN, LLC. All rights reserved.
-</p>
-</footer>
-
 <a id="feedback-link" href="https://github.com/tncor/tnaps-wiki/issues" style="display: none" title="Have a comment, question, or issue about this page? Please open an issue.">Feedback?</a>
 <!-- JavaScript at the bottom for fast page loading -->
 <!-- Grab Google CDN's jQuery, with a protocol relative URL; fall back to local if offline -->

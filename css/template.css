@@ -311,7 +311,7 @@ ul.menu_middle_level3 {
 
 /* all body elemnts */
 
-#bodywrap {
+.bodywrap {
 	width: 100%;
 	height: auto;
 	margin: 0;
@@ -320,31 +320,19 @@ ul.menu_middle_level3 {
 	overflow: hidden;
 }
 
-#bodycontainerbg {
-	width: 916px;
-	height: auto;
-	margin: 0 auto;
-	padding: 0;
-	/* background: url(/img/bodybgtop.png) no-repeat top left;*/
-	overflow: hidden;
-}
-
-#bodycontainer {
+.bodycontainer {
 	width: 900px;
 	height: auto;
-	margin: 0 auto;
-    margin-top: 4px;
-	padding: 15px 8px 0 8px;
-	/* background: url(/img/bodybg.png) repeat-y top left;*/
-	overflow: hidden;
-}
-
-	width: 100%;
-	height: auto;
-	margin: 0;
 	padding: 0;
-	text-align: center;
+    padding-top: 20px;
 	overflow: hidden;
+    display: block;
+	clear: both;
+	margin: 0 auto;
+	color: #444444;
+	font-size: 13px;
+	text-align: left;
+    line-height: 150%;
 }
 
 #footercontainer_home {		
@@ -525,26 +513,6 @@ h4 {
     text-shadow: rgba(255, 255, 255, 0.699219) 0px 1px 0px;
 }
 
-strong {
-	font-weight: bold;
-	font-style: normal;
-	line-height: 150%;
-	color: #444444;
-}
-
-em {
-	font-weight: normal;
-	font-style: italic;
-	line-height: 150%;
-	color: #444444;
-}
-
-p,td,tr,div {
-	margin: 0;
-	padding: 0;
-	line-height: normal;
-}
-
 ul {
 	margin: 0px;
 	padding: 0 0 20px 30px;
@@ -706,58 +674,9 @@ address {
 	border: none;
 }
 
-.contentpaneopen p {
-	line-height: 150%;
-	margin: 0 0 10px 0;
-	padding: 0;
-	/* color: #444444; */
-	font-size: 13px;
-	/*text-align: left;*/
-}
-
-.contentpaneopen td {
-	line-height: 150%;
-	margin: 0;
-	padding: 0;
-}
-
-.contentpane {
-	line-height: 150%;
-	margin: 0 0 20px 0;
-	padding: 0 20px 0 20px;
-	color: #444444;
-	font-size: 14px;
-	text-align: left;
-}
-
-#advert p {
-	line-height: 140%;
-	margin: 5px 0 5px 0;
-	padding: 0;
-}
-
-.moduletable_advertlarge {
-	display: inline;
-	float: left;
-	width: 560px;
-	height: 170px;
-	line-height: normal;
-	margin: 0;
-	padding: 16px 24px 12px 24px;
-	color: #444444;
-	font-size: 13px;
-	text-align: left;
-	background: url(/img/advertlargebg.jpg) no-repeat top left;
-}
-
-
-
 /* @end */
 
 /* @group Navigation Menus */
-
-
-
 
 /* @group Left Navigation */
 
