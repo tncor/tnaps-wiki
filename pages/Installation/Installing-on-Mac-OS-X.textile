@@ -37,3 +37,22 @@ Now you should be able to access TNAPS Management Center in browser throught the
 ```
 http://localhost:9095/tnaps/console
 ```
+
+Note: The first launch of Management Center from Browser would take some amount of time. Please, be patient and for the Management Center to load. It is normal, as TNAPS initializes initial resources after launch. 
+
+h3. Shared Files
+
+TNAPS places all of its files (Library, Instances configuration, Logs, etc.) in the following folder:
+
+```
+/usr/share/tn/server
+```
+
+h3. Uninstall
+
+To remove TNAPS simply delete folder with installed TNAPS (@/usr/local/tnaps@). You might want to preserve TNAPS shared files intact so that they can be used next time you decide to install TNAPS. In case you prefer to get rid of everything remove @/usr/share/tn@ as well:
+
+```bash
+sudo rm -r -f /usr/local/tnaps
+sudo rm -r -f /usr/share/tn
+```
