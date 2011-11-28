@@ -48,7 +48,7 @@ As you may have noticed we used @sudo@ to launch TNAPS. Actuallu, @sudo@ is requ
 $ sudo mkdir /usr/share/tn
 $ sudo chmod -R a+w /usr/share/tn
 $ mono /usr/local/tnaps/tnaps.exe
-``` 
+```
 
 h3. Shared Files
 
