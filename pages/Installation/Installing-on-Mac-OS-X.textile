@@ -54,5 +54,6 @@ To remove TNAPS simply delete folder with installed TNAPS (@/usr/local/tnaps@). 
 
 ```bash
 sudo rm -r -f /usr/local/tnaps
+
 sudo rm -r -f /usr/share/tn
 ```
