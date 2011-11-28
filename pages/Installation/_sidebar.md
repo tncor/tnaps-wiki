@@ -1,4 +1,4 @@
-[[Home]] > [[Installation]]
+[[Home]] > [[Installation]] >
 
 * [[Debian/Ubuntu|Installing on Debian Ubuntu]]
 * [[Other Linux|Installing on other Linux]]
