@@ -1,16 +1,16 @@
 h2. Installing on Mac OS X
 
-The following steps should get you up and running with TNAPS on MacOSX 10.5. 10.6 or later from distribution binaries.
+The following steps should get you up and running with TNAPS on MacOSX 10.5, 10.6 or later from distribution binaries.
 
 h3. Installing Mono
 
-TNAPS uses Mono Framework to run. Current version of TNAPS (3 beta 1) supports Mono 2.10.1. Later versions of Mono are not supported yet due to some bugs in Mono's WCF implementation. We are looking forward to fixes those issues soon.
+TNAPS uses Mono Framework to run. Current version of TNAPS 3 beta 1 supports Mono 2.10.1. Later versions of Mono are not supported yet due to some bugs in Mono's WCF implementation. We are looking forward to fix those issues soon.
 
 Get Mono 2.10.1 installation package for Mac OS X from the Mono Project [[download page|http://download.mono-project.com/archive/2.10.1/download/]].
 
 Install Mono using downloaded package.
 
-Check the correct version of @mono@ is installed:
+Check whether you have correct version of @mono@ is installed:
 
 ```bash
 $ mono --version
@@ -20,16 +20,20 @@ If it says 2.10.1 your are ready to launch TNAPS.
 
 h3. Installing Distribution Binaries
 
-TNAPS comes in a form of zip package that have to be exctracted. It can be any place of your system, but we recommend typical place of @/usr/local/tnaps@. Please note, that zip package with TNAPS already contains folder named @tnaps@ so you need simply to extract package contents into @/usr/local@.
+Download latest TNAPS distribution from [[download page|http://tncor.com/en/tnaps/download]]. 
+
+TNAPS comes in a form of zip package that have to be exctracted. You can extract it in any place of your system, but we recommend typical place of @/usr/local/tnaps@. Please note, zip package with TNAPS already contains folder named @tnaps@ so you need simply to extract package contents into @/usr/local@.
 
 Once unzipped you are ready to launch TNAPS. Assuming you have @/usr/local/tnaps@ as your base directory do the following:
 
 ```bash
-$ mono /usr/local/tnaps.exe
+$ mono /usr/local/tnaps/tnaps.exe
 ```
 
-Note: As TNAPS launches it opens 9095 port for incoming connection in order to serve Management Center files. Mac OS X will provide you with the confirmation to allow mono (tnaps) to open this port. Click yes. 
+Note: As TNAPS launches it opens port @9095@ for incoming connection in order to serve Management Center files. Mac OS X will provide you with the confirmation to allow @mono@ (@tnaps.exe@) to open this port. Accept the confirmation. 
 
-Now you should nbe able to access TNAPS Management Console in browser throught @http://localhost:9095/tnaps/console@. Management Console can also be opened from other 
+Now you should be able to access TNAPS Management Center in browser throught the url:
+
+@http://localhost:9095/tnaps/console@
 
 
