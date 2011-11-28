@@ -1,8 +1,8 @@
-h2 Installing on Mac OS X
+h2. Installing on Mac OS X
 
 The following steps should get you up and running with TNAPS on MacOSX 10.5. 10.6 or later from distribution binaries.
 
-h3 Installing Mono
+h3. Installing Mono
 
 TNAPS uses Mono Framework to run. Current version of TNAPS (3 beta 1) supports Mono 2.10.1. Later versions of Mono are not supported yet due to some bugs in Mono's WCF implementation. We are looking forward to fixes those issues soon.
 
@@ -18,7 +18,7 @@ $ mono --version
 
 If it says 2.10.1 your are ready to launch TNAPS. 
 
-h3 Installing Distribution Binaries
+h3. Installing Distribution Binaries
 
 TNAPS comes in a form of zip package that have to be exctracted. It can be any place of your system, but we recommend typical place of @/usr/local/tnaps@. Please note, that zip package with TNAPS already contains folder named @tnaps@ so you need simply to extract package contents into @/usr/local@.
 
