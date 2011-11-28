@@ -27,18 +27,28 @@ TNAPS comes in a form of zip package that have to be exctracted. You can extract
 Once unzipped you are ready to launch TNAPS. Assuming you have @/usr/local/tnaps@ as your base directory do the following:
 
 ```bash
-$ mono /usr/local/tnaps/tnaps.exe
+$ sudo mono /usr/local/tnaps/tnaps.exe
 ```
-
+ 
 Note: As TNAPS launches it opens port @9095@ for incoming connection in order to serve Management Center files. Mac OS X will provide you with the confirmation to allow @mono@ (@tnaps.exe@) to open this port. Accept the confirmation. 
 
-Now you should be able to access TNAPS Management Center in browser throught the url:
+Now you should be able to access TNAPS Management Center in browser through the URL:
 
 ```
 http://localhost:9095/tnaps/console
 ```
 
 Note: The first launch of Management Center from Browser would take some amount of time. Please, be patient and for the Management Center to load. It is normal, as TNAPS initializes initial resources after launch. 
+
+h3. Eliminating Need for @sudo@
+
+As you may have noticed we used @sudo@ to launch TNAPS. Actuallu, @sudo@ is required only to create @/usr/share/tn@ directory for TNAPS Library and other generated files. If you want to be more secure and note use @sudo@ just add write permissions for yourself or group to @/usr/share/tn@ and launch @tnaps@ from your shell:
+
+```bash
+$ sudo mkdir /usr/share/tn
+$ sudo chmod -R a+w /usr/share/tn
+$ mono /usr/local/tnaps/tnaps.exe
+``` 
 
 h3. Shared Files
 
@@ -53,6 +63,6 @@ h3. Uninstall
 To remove TNAPS simply delete folder with installed TNAPS (@/usr/local/tnaps@). You might want to preserve TNAPS shared files intact so that they can be used next time you decide to install TNAPS. In case you prefer to get rid of everything remove @/usr/share/tn@ as well:
 
 ```bash
-sudo rm -r -f /usr/local/tnaps
-sudo rm -r -f /usr/share/tn
+$ sudo rm -r -f /usr/local/tnaps
+$ sudo rm -r -f /usr/share/tn
 ```
