@@ -34,6 +34,6 @@ Note: As TNAPS launches it opens port @9095@ for incoming connection in order to
 
 Now you should be able to access TNAPS Management Center in browser throught the url:
 
+```
 @http://localhost:9095/tnaps/console@
-
-
+```
