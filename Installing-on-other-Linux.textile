@@ -1,0 +1,3 @@
+## Installing on other Linux
+
+There is not much difference between Linux distros in installing TNAPS. So in the meanwhile use [[Installing on Debian Ubuntu]] manual.
