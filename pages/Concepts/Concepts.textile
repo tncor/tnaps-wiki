@@ -7,3 +7,32 @@ This section is a high level overview of concepts, technology choices, and imple
 h3. Basics
 
 TNAPS architecture is defined using the following schema.
+
+h3. Component
+
+In TNAPS everything begins with the Component. The Component is the only part of TNAPS that stores and accesses the executable logic of the application. TNAPS Studio, Visual Studio, Eclipse, or any other IDE allows the development of components.
+
+The Component employs a special message transport layer to allow components to work seamlessly within one application with .Net or Java.
+Component is not just a set of .NET Assemblies and .JAR files, but an actual package that contains binary resources and all other assets that the component logic uses during execution.
+
+TNAPS comes with a set of default components that are most often used in every server application. For example, Hosting Component provides functionality to  expose other components through REST or SOAP services.
+
+h3. Application
+
+Each application in TNAPS is a composition of components linked together like building blocks to construct the required business logic.
+
+Within applications there are components called “root components” that are executed right after launch of the application. Those root components reference other components and call them when needed.
+
+h3. TNAPS Library
+
+Every TNAPS installation creates a repository for components and applications called the Library. Every component and application gets stored there before actually being used.
+
+TNAPS Library greatly resembles standard libraries of magazines. Each component or application is installed into Library and is stored in multiple versions, just like standard book library store magazine issues. Each time a new version of the component is published, all older applications using previous versions of the component are still fully functional.
+
+From every application in TNAPS, Library and Instance can be created. The Application instance is the actually executed process. One application in TNAPS Library can be used to create as many Instances as needed.
+
+The following picture shows Library-Instance connection.
+
+h3. Core
+
+TNAPS has a relatively small and robust kernel. Almost all functionality is created using extension components bundled with TNAPS, so Hosting, Data Access, Accounting, etc. are just components.
