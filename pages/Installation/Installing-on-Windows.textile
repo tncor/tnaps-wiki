@@ -51,7 +51,7 @@ h3. Uninstall
 
 To remove TNAPS simply unregister service amd delete folder with installed TNAPS (ie. @C:\Program Files\TNAPS@). You might want to preserve TNAPS shared files intact so that they can be used next time you decide to install TNAPS. In case you prefer to get rid of everything remove @C:\Program Data\tn@ as well. Using @cmd@ with Administrator privilages do the following:
 
-```bash
+```cmd
 > sc stop tnaps
 > sc delete tnaps
 > rd /S "C:\Program Files\TNAPS"
