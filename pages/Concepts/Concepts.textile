@@ -6,7 +6,7 @@ h3. Basics
 
 TNAPS architecture is defined using the following schema.
 
-[img/article/architecture.png]
+[[img/article/architecture.png]]
 
 h3. Component
 
