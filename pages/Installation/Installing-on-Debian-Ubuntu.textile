@@ -25,7 +25,7 @@ $ sudo make install
 
 After success build you will have @/opt/mono-2.10.1/bin/mono@  binary to run TNAPS with.
 
-Note: Consult with Mono README for detailed installation instructions [[https://github.com/mono/mono/tree/]]]
+Note: Consult with Mono README for detailed installation instructions [[https://github.com/mono/mono/tree/]]
 
 Check whether you have correct version of @mono@ is installed:
 
