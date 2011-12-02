@@ -1,0 +1,61 @@
+h2. Installing on Windows
+
+The following steps should get you up and running with TNAPS on Windows. All versions of Windows that supports .NET 4 are valid for TNAPS.
+
+h3. Installing .NET 4
+
+TNAPS uses Microsoft .NET 4 framework for running under Windows. 
+
+Get .NET 4 installation package from Microsoft using [[official download page|http://download.mono-project.com/archive/2.10.1/download/]].
+
+h3. Installing TNAPS from Distribution Binaries
+
+Download latest TNAPS distribution from [[download page|http://tncor.com/en/tnaps/download]]. 
+
+TNAPS comes in a form of zip package that have to be exctracted. You can extract it in any place of your system, but we recommend typical place of @C:\Program Files\TNAPS@. Please note, zip package with TNAPS already contains folder named @tnaps@ so you need simply to extract package contents into @C:\Program Files\@.
+
+Once unzipped you have to unblock TNAPS executable as Windows usually blocks @exe@ files downloaded from Internet from launching. To unblock @tnaps.exe@ file right-click on it and choose *Properties*. Open *General* tab and click *Unblock* button at the bottom.
+
+You should register @tnaps.exe@ as Windows Service.  The following example demonstrates the best way to do that using @cmd@ (do not forget to launch console under Administrator privilage:
+
+```bash
+> cd "C:\Program Files\TNAPS"
+> %windir%\Microsoft.NET\Framework\v4.0.30319\installutil tnaps.exe -i
+```
+
+If it says OK, then you a ready to start TNAPS service:
+
+```bash
+> sc start tnaps
+```
+
+Note: As TNAPS launches it opens port @9095@ for incoming connection in order to serve Management Center files. 
+
+Now you should be able to access TNAPS Management Center in browser through the URL:
+
+```
+http://localhost:9095/tnaps/console
+```
+
+Note: The first launch of Management Center from Browser would take some amount of time. Please, be patient and for the Management Center to load. It is normal, as TNAPS initializes initial resources after launch. 
+
+h3. Shared Files
+
+TNAPS places all of its files (Library, Instances configuration, Logs, etc.) in the following folder:
+
+```
+C:\Program Data\tn
+```
+
+h3. Uninstall
+
+To remove TNAPS simply unregister service amd delete folder with installed TNAPS (ie. @C:\Program Files\TNAPS@). You might want to preserve TNAPS shared files intact so that they can be used next time you decide to install TNAPS. In case you prefer to get rid of everything remove @C:\Program Data\tn@ as well. Using @cmd@ with Administrator privilages do the following:
+
+```bash
+> sc stop tnaps
+> sc delete tnaps
+> rd /S "C:\Program Files\TNAPS"
+> rem Next two lines would delete TNAPS shared files (Library etc.)
+> cd "C:\Program Data"
+> rd /S tn
+```
