@@ -6,6 +6,8 @@ h3. Installing Mono
 
 TNAPS uses Mono Framework to run. Current version of TNAPS 3 beta 1 supports Mono 2.10.1. More recent versions of Mono are not supported yet due to some bugs in Mono's WCF implementation. We are looking forward to fix those issues soon. Meanwhile, you should stick with 2.10.1. 
 
+Get Mono 2.10.1 installation package for Mac OS X from the Mono Project [[download page|http://download.mono-project.com/archive/2.10.1/download/]].
+
 You have to build Mono 2.10.1 manually, as standart distributions provide automatic install only for 2.6.* series. Mono allows multiple versions to be installed at the same time. This is very convinient as some Debian programs depend on Mono 2.6.* and it is better not to remove it. To start buiding Mono from scratch clone git repo:
 
 ```bash
