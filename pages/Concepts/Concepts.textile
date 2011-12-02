@@ -33,6 +33,8 @@ From every application in TNAPS, Library and Instance can be created. The Applic
 
 The following picture shows Library-Instance connection.
 
+!img/article/library.png!
+
 h3. Core
 
 TNAPS has a relatively small and robust kernel. Almost all functionality is created using extension components bundled with TNAPS, so Hosting, Data Access, Accounting, etc. are just components.
