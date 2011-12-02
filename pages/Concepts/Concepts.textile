@@ -2,8 +2,6 @@ h2. Concepts
 
 This section is a high level overview of concepts, technology choices, and implementation details that are at work in TNAPS.
 
-<div id="toc"></div>
-
 h3. Basics
 
 TNAPS architecture is defined using the following schema.
