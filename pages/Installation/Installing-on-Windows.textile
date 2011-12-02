@@ -18,14 +18,14 @@ Once unzipped you have to unblock TNAPS executable as Windows usually blocks @ex
 
 You should register @tnaps.exe@ as Windows Service.  The following example demonstrates the best way to do that using @cmd@ (do not forget to launch console under Administrator privilage:
 
-```bash
+```bat
 > cd "C:\Program Files\TNAPS"
 > %windir%\Microsoft.NET\Framework\v4.0.30319\installutil tnaps.exe -i
 ```
 
 If it says OK, then you a ready to start TNAPS service:
 
-```bash
+```bat
 > sc start tnaps
 ```
 
