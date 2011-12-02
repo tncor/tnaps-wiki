@@ -6,7 +6,7 @@ h3. Installing .NET 4
 
 TNAPS uses Microsoft .NET 4 framework for running under Windows. 
 
-Get .NET 4 installation package from Microsoft using [[official download page|http://download.mono-project.com/archive/2.10.1/download/]].
+Get .NET 4 installation package from Microsoft using [[official download page|http://www.microsoft.com/download/en/details.aspx?id=17718]].
 
 h3. Installing TNAPS from Distribution Binaries
 
