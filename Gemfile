@@ -9,4 +9,5 @@ gem 'rdiscount'
 gem 'RedCloth'
 gem 'rspec'
 gem 'pygmentize'
-
+gem 'rio'
+gem 'curb'
