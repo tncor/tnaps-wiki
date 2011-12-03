@@ -1,0 +1,9 @@
+[.NET Component{bg:green}]*->[.NET Adapter],
+[Java Component]*->[Java Adapter],
+[.NET Adapter]->[Message Transport],
+[Java Adapter]->[Message Transport],
+[Java Adapter]hosted by-.->[JVM{bg:orange}],
+[Message Transport]->[Application Hosting],
+[Application Hosting]->[TNAPS Core],
+[TNAPS Core]->[.NET/Mono{bg:blue}],
+[note:OpenJDK or Oracle{bg:cornsilk}]->[JVM]
