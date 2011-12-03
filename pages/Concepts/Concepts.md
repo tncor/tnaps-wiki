@@ -13,7 +13,7 @@ TNAPS 3 uses the following main concepts:
 
 Library is the main repository with TNAPS data and it contains all Components and Apps installed at local machine. Every App uses one or many Components to run. 
 
-<p style="float:right"> !img/diagrams/library.png! </p>
+<p style="float:right"> ![123](img/diagrams/library.png) </p>
 
 You have to intall everything you need to use into the Library first, then create Instance of the App you need to launch and execute it. Instance is a one copy of application with configuration created to run it.
 
