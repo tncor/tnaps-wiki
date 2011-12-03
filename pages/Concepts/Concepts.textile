@@ -6,7 +6,7 @@ h3. Basics
 
 TNAPS 3 uses the following main concepts:
 
-!(center)img/diagrams/library.png!
+!(left)img/diagrams/library.png!
 
 # Component
 # Application
