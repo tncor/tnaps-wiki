@@ -1,3 +1,12 @@
+img.right {
+	float: right;
+}
+img.left {
+	float: left;
+}
+img.center::parent {
+	text-align: center;
+}
 .article {
     float:center;
 	display:inline-block;
