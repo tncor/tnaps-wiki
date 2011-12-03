@@ -6,6 +6,6 @@
 architecture.png
 ```
 
-[http://yuml.me/edit/3012c076]
+[[http://yuml.me/edit/3012c076]]
 
-[[http://yuml.me/3012c076]]
+[[img/diagrams/architecture.png]]
