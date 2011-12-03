@@ -36,17 +36,13 @@ Each application in TNAPS is a composition of components linked together like bu
 
 Within applications there are components called “root components” that are executed right after launch of the application. Those root components reference other components and call them when needed.
 
-h3. TNAPS Library
+h3. Library
 
 Every TNAPS installation creates a repository for components and applications called the Library. Every component and application gets stored there before actually being used.
 
 TNAPS Library greatly resembles standard libraries of magazines. Each component or application is installed into Library and is stored in multiple versions, just like standard book library store magazine issues. Each time a new version of the component is published, all older applications using previous versions of the component are still fully functional.
 
 From every application in TNAPS, Library and Instance can be created. The Application instance is the actually executed process. One application in TNAPS Library can be used to create as many Instances as needed.
-
-The following picture shows Library-Instance connection.
-
-!img/article/library.png!
 
 h3. Core
 
