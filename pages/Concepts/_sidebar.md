@@ -1,5 +1,2 @@
-* [[Installation]]
-* [[Concepts]]
-* [[Development]]
-* [[Management]]
+* [[Library]]
 * [[Additional Resources]]
