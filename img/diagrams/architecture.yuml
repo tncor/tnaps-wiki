@@ -1,4 +1,4 @@
-[.NET Component{bg:green}]*->[.NET Adapter],
+[.NET Component]*->[.NET Adapter],
 [Java Component]*->[Java Adapter],
 [.NET Adapter]->[Message Transport],
 [Java Adapter]->[Message Transport],
