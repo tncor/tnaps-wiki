@@ -4,9 +4,9 @@ This section is a high level overview of concepts, technology choices, and imple
 
 h3. Basics
 
-TNAPS 3 uses the following main concepts:
+!(right)img/diagrams/library.png!
 
-!(left)img/diagrams/library.png!
+TNAPS 3 uses the following main concepts:
 
 # Component
 # Application
