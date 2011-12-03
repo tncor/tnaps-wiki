@@ -1,4 +1,4 @@
-[Home] > [Concepts]
+[[Home]] > [[Concepts]]
 
 * [[Library]]
 * [[Additional Resources]]
