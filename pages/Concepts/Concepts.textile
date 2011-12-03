@@ -8,6 +8,8 @@ TNAPS architecture is defined using the following schema.
 
 p=. !http://yuml.me/24074e70!
 
+[[http://yuml.me/24074e70|float]]
+
 h3. Component
 
 In TNAPS everything begins with the Component. The Component is the only part of TNAPS that stores and accesses the executable logic of the application. TNAPS Studio, Visual Studio, Eclipse, or any other IDE allows the development of components.
