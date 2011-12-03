@@ -13,6 +13,8 @@ TNAPS 3 uses the following main concepts:
 
 Library is the main repository with TNAPS data and it contains all Components and Apps installed at local machine. Every App uses one or many Components to run. 
 
+!img/diagrams/library.png!
+
 You have to intall everything you need to use into the Library first, then create Instance of the App you need to launch and execute it. Instance is a one copy of application with configuration created to run it.
 
 TNAPS allows to create as many Instances of App as you need. For example, it can be the same CRM application, but hosted on different ports, using different datasources and serving different clients.
