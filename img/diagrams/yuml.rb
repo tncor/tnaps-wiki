@@ -20,7 +20,7 @@ end
 
 # POST DSL up to yUML
 #c = Curl::Easy.new("http://yuml.me/diagram/scruffy/class/")
-c = Curl::Easy.new("http://yuml.me/diagram/scruffy;scale:80;/class/")
+c = Curl::Easy.new("http://yuml.me/diagram/scruffy;dir:LR;scale:80;/class/")
 c.multipart_form_post = true
 file_data = get_file_as_string yuml_name
 c.http_post(Curl::PostField.content("dsl_text",file_data))
