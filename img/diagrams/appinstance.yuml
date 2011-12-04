@@ -1,4 +1,4 @@
-[Instance 2|host:10.10.10.1;port:9092{bg:green}]-.-^[Application|host;port],
-[Instance 1|host:localhost;port:9091{bg:green}]-.-^[Application],
+[Instance 2|host:10.10.10.1;port:9092{bg:lightblue}]-.-^[Application|host;port],
+[Instance 1|host:localhost;port:9091{bg:lightblue}]-.-^[Application],
 [note: Different configs{bg:cornsilk}]->[Instance 1],
 [note: Different configs]->[Instance 2]

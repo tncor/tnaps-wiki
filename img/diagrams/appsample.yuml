@@ -1,0 +1,4 @@
+[App{bg:lightblue}]->[Host Provider]
+[Host Provider]->[Custom Comp 2],
+[Host Provider]->[Custom Comp 1],
+[note: root component{bg:cornsilk}]->[Host Provider]
