@@ -1,1 +1,1 @@
-[Home] > [Resources|Additional Resources]
+[[Home]] > [[Resources]]

@@ -1,1 +1,1 @@
-[Home] > [Management]
+[[Home]] > [[Management]]

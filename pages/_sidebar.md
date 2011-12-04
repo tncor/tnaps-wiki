@@ -2,4 +2,4 @@
 * [[Concepts]]
 * [[Development]]
 * [[Management]]
-* [[Additional Resources]]
+* [[Additional Resources|Resources]]
