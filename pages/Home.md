@@ -1,10 +1,26 @@
-##Welcome to the TNAPS Wiki
+## Welcome to the TNAPS Wiki
 
-TNAPS is a free cross-platform application server for .NET, Mono, and Java, with excellent component-driven architecture. And yes, it will support scripting languages (Ruby, Python and JavaScript) using DLR in the upcoming releases.
+TNAPS is a free cross-platform application server for .NET, Mono, and Java, with excellent component-driven architecture. And yes, it will support scripting languages (Ruby, Python and JavaScript) using DLR in future.
+
+### Important
+
+This wiki documentation is in active development, so many pages are not written yet. If you see something like [[Page reference]] with rose color it means that we are still working on this page and it is not available for now. 
+
+You can always help us to improve this documentation. Please check contribute to TNAPS wiki section below to learn how.
 
 ### Introduction to TNAPS
 
-The [[high level tour of TNAPS|Concepts]] will give you a thorough overview of concepts and architectural decisions at work in TNAPS.
+[[The high level tour of TNAPS|Concepts]] will give you a thorough overview of concepts and architectural decisions at work in TNAPS.
+
+### Installation
+
+To give TNAPS a test drive check [[installation]] page for instructions on running at your platform.
+
+### Your First App
+
+No deep diving, just take this tutorial and [[run your first app|First App]] in 10 minutes. 
+
+No time to try? No problem - we've created a [[bunch of samples|Samples]] just to give you a short start. 
 
 ### Development with TNAPS
 
