@@ -1,3 +1,0 @@
-h2. Developing with TNAPS
-
-To be filled soon... Be patient ;)
