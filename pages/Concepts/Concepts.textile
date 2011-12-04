@@ -17,11 +17,11 @@ Library is the main repository with TNAPS data and it contains all Components an
 
 You have to install everything you need to use into the Library first, then create Instance of the App you need to launch and execute it. Instance is a one copy of application with configuration created to run it.
 
-TNAPS allows to create as many Instances of App as you need. For example, it can be the same CRM application, but hosted on different ports, using different datasources and serving different clients.
+TNAPS allows to create as many Instances of App as you need. For example, it can be the same CRM application, but hosted on different ports, using different datasources and serving different clients:
 
 !img/diagrams/appinstance.png!
 
-For every Instance you launch TNAPS executes separate process, so all Instances work independently. 
+For every Instance you launch TNAPS executes separate process, so all Instances work independently.
 
 h3. Component
 
