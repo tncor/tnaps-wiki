@@ -7,6 +7,9 @@ img.left {
 img.center::parent {
 	text-align: center;
 }
+a.absent {
+    color: salmon;
+}
 .article {
     float:center;
 	display:inline-block;
