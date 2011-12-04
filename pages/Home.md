@@ -18,7 +18,7 @@ Most visited articles from this section include (but not limited to):
 
 ### Managing TNAPS
 
-This sections oulines basic in [[TNAPS management|Management]], including full list of available [[REST API|Management REST API]] for calling TNAPS.
+This sections outlines basic in [[TNAPS management|Management]], including [[REST API|Management REST API]] for calling TNAPS.
 
 ### Contribute to TNAPS Wiki
 
