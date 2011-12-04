@@ -1,6 +1,6 @@
 ##Welcome to the TNAPS Wiki
 
-TNAPS is a free cross-platform application server for .NET, Mono, and Java, with excellent component-driven architecture. Note for scripting fans: yes, we are going to support script languages (Ruby, Python and JavaScript) using DLR in the upcoming releases.
+TNAPS is a free cross-platform application server for .NET, Mono, and Java, with excellent component-driven architecture. And yes, it will support scripting languages (Ruby, Python and JavaScript) using DLR in the upcoming releases.
 
 ### Introduction to TNAPS
 
