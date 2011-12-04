@@ -1,0 +1,7 @@
+h2. Recommended Resources
+
+The following pages contain links with helpful information relating to TNAPS:
+
+* Overviews and Introductions
+* [[Videos|http://tncor.com/en/tnaps/how-to]]
+* [[TNAPS Sample Applications|http://github.com/tncor/tnaps-samples]]
