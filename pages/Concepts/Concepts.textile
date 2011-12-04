@@ -15,32 +15,42 @@ TNAPS 3 uses the following main concepts:
 
 h3. Component
 
-In TNAPS everything begins with the Component. Component is the _only_ part of TNAPS that contains executable logic of the application.  
+In TNAPS everything begins with the Component. Component is the _only_ part of TNAPS that contains executable logic of the application. This executable logic can be written in one of the supported hosting environments: .NET or Java. Manifest of the [[component package]] determines which environment to create for the component.
 
-Components use a special [[message transport layer|Message Transport Layer]] to communicate seamlessly within one application with .Net or Java.
+Each hosting environment is provided by its own adapter. During application execution TNAPS determines which component should be called and load its code into the appropriate environment adapter. 
+
+Components use a special [[message transport layer|Message Transport Layer]] to communicate seamlessly within one application even if those components are written using different hosting environments. It allows TNAPS applications to be combined from components that are written in different languages.
+
 Component is not just a set of .NET Assemblies and .JAR files, but an actual package that contains binary resources and all other assets that the component logic uses during execution.
 
 TNAPS comes with a set of default components that are most often used in every server application. For example, Hosting Component provides functionality to  expose other components through REST or SOAP services.
 
-TNAPS Studio, Visual Studio, Eclipse, or any other IDE allows the development of components.
+Development of components is quite strightforward. You can use Visual Studio, Eclipse or any other IDE to code your component logic. Packaging component into distributable package needs calling for TNAPS SDK tools.
+
+To dive deeply into component ideas go to [[Components]] section and learn the needed aspects.
 
 h3. Application
 
-As TNAPS is an application server its central concept is Application - piece of software with business logic valuable to end-user so much that he or she would like to call for it. 
+As TNAPS is an application server its central concept is certanly an Application - piece of software with business logic valuable to end-user so much that he or she would like to call it. 
 
-Each application in TNAPS is a composition of components linked together like building blocks to construct the required business logic.
+Each application in TNAPS is a composition of components linked together like building blocks to construct the required business logic. That is the core idea of component-driven development with TNAPS. You get existing components and combine them to archieve desired functionality.
 
-Within applications there are components called “root components” that are executed right after launch of the application. Those root components reference other components and call them when needed.
+Within application there are components called “root components” that are executed right after launch of the application. Those root components reference other components and call them upon user request or internal trigger. Such root components are usually components that provide hosting and other infrastructure services for application.
+
+Applications are distributed like components - in packages. They may contain not only app definitions, but referenced component packages as well. This allows building of self-sufficient application distribution package that does not rely on external components availability.
 
 h3. Library
 
-Every TNAPS installation creates a repository for components and applications called the Library. Every component and application gets stored there before actually being used.
+TNAPS creates a repository called Library at the local machine for components and applications. Every component and application gets stored there before actually being used.
 
-TNAPS Library greatly resembles standard libraries of magazines. Each component or application is installed into Library and is stored in multiple versions, just like standard book library store magazine issues. Each time a new version of the component is published, all older applications using previous versions of the component are still fully functional.
+TNAPS Library greatly resembles standard library of magazines. Each component or application is put into Library and is stored in multiple versions, just like standard book library store magazine issues. Each time a new version of the component is published, all older applications using previous versions of the component are still fully functional - because TNAPS would preserve all existing versions.
 
-From every application in TNAPS, Library and Instance can be created. The Application instance is the actually executed process. One application in TNAPS Library can be used to create as many Instances as needed.
 
-Library is the main repository with TNAPS data and it contains all Components and Apps installed at local machine. 
+h3. Instance
+
+From every application in TNAPS Library an Instance can be created. The Application instance is the actually executed process. One application in TNAPS Library can be used to create as many Instances as needed.
+ 
+Library is the main repository with TNAPS data and it contains all Components and Apps installed at local machine.
 
 You have to install everything you need to use into the Library first, then create Instance of the App you need to launch and execute it. Instance is a one copy of application with configuration created to run it.
 
