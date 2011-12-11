@@ -2,6 +2,11 @@ h2(#installation).  Installation
 
 Click the link for your operating system to see instructions on how to install TNAPS:
 
+* [[Installing on Debian and Ubuntu|Installing on Debian Ubuntu]]
+* [[Installing on Other Linux]]
+* [[Installing on Mac OS X]]
+* [[Installing on Windows]]
+
 h3(#startup).  Starting up
 
 To start up a TNAPS node, change directory as necessary to where you installed TNAPS (usually @/opt/tnaps@) and run mono with tnaps:
