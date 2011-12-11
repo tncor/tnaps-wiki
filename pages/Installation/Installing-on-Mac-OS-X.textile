@@ -16,7 +16,7 @@ Check whether you have correct version of @mono@ is installed:
 $ mono --version
 ```
 
-If it says 2.10.1 your are ready to launch TNAPS. 
+If it says @2.10.1@ your are ready to deploy TNAPS. 
 
 h3. Installing Distribution Binaries
 
@@ -30,7 +30,7 @@ Once unzipped you are ready to launch TNAPS. Assuming you have @/usr/local/tnaps
 $ sudo mono /usr/local/tnaps/tnaps.exe
 ```
  
-Note: As TNAPS launches it opens port @9095@ for incoming connection in order to serve Management Center files. Mac OS X will provide you with the confirmation to allow @mono@ (@tnaps.exe@) to open this port. Accept the confirmation. 
+Note: As TNAPS launches it opens port @9095@ for incoming connection in order to serve Management Center files and management API calls. Mac OS X will provide you with the confirmation to allow @mono@ (@tnaps.exe@) to open this port. Accept the confirmation. 
 
 Now you should be able to access TNAPS Management Center in browser through the URL:
 

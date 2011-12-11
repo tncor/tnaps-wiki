@@ -13,7 +13,7 @@ $cd ~/tmp
 $ git clone git://github.com/mono/mono.git
 ```
 
-Checkout 2.10.1 and build it into /opt/mono-2.10.1 directory. It is a recommended directory naming schema for Mono building.
+Checkout version @2.10.1@ and build it into /opt/mono-2.10.1 directory. It is a recommended directory naming schema for Mono building.
 
 ```bash
 $ cd mono
@@ -33,7 +33,7 @@ Check whether you have correct version of @mono@ is installed:
 $ /opt/mono-2.10.1/bin/mono --version
 ```
 
-If it says 2.10.1 your are ready to launch TNAPS. 
+If it says @2.10.1@ your are ready to deploy TNAPS. 
 
 h3. Installing Distribution Binaries
 

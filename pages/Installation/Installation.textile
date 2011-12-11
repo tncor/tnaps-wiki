@@ -9,9 +9,46 @@ Click the link for your operating system to see instructions on how to install T
 
 h3(#startup).  Starting up
 
-To start up a TNAPS node, change directory as necessary to where you installed TNAPS (usually @/opt/tnaps@) and run mono with tnaps:
-
+Each operating system have some notes upon launching TNAPS, so you should consider above installation articles. However in general starting TNAPS in Linux / Mac OS X looks like the following:
 
 ```bash
+# inside tnaps dir
 $ mono tnaps.exe
 ```
+
+For Windows you should start tnaps service:
+
+```bat
+> sc start tnaps
+```
+
+h3. Check if it Works
+
+The easiest way to test whether TNAPS is working is to use the curl command-line tool. Now that you have TNAPS running on your local machine, run this command:
+
+```bash
+curl http://localhost:9095/tnaps/library/components/names.json
+```
+
+This actually calls TNAPS [[management API|Management REST API]] and requests list of installed [[Components]]. If it is a fresh install of TNAPS with only [[standart components]] installed you should get the following result:
+
+```javascript
+["HostProvider"]
+```
+
+This result means two things:
+
+* TNAPS was installed and is working properly on your machine
+* Your TNAPS Library contains one component, namely Host Provider. This component will provide hosting facilities for your future TNAPS applications.
+
+h3. Management Center 
+
+There is more than just curl in TNAPS management. TNAPS offers a complete Management Center web application. To access it navigate your [[modern browser|Supported Browsers]] to the following:
+
+```
+http://localhost:9095/tnaps/console
+```
+
+h3. Now What?
+
+As you have TNAPS running you'd probably want to test it in action and launch your [[first hand-made stuff|First App]] or dive into [[development]] docs. Be sure to check [[management]] section to know how it is better to handle TNAPS installation.
