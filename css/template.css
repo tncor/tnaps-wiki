@@ -37,6 +37,16 @@ body {
 
 }
 
+#disqus_thread {
+    border-radius: 5px;
+    padding: 10px;
+    border: 1px solid #CCC;
+}
+
+#disqus_thread h3 {
+    font-size: 14px;
+}
+
 /* tn home logo */
 .tn_logo {
 	display: inline-block;
@@ -953,12 +963,12 @@ a.sublevel_left:hover {
 
 .article_separator {
 	display: block;
-	width: 500px;
+	width: 550px;
 	height: 1px;
 	margin: 0;
 	margin-top: 20px;
 	margin-bottom: 20px;
-	margin-left: 200px;
+	margin-left: 50px;
 	padding: 0;
 	border: 0px;
 	border-top: 1px solid #ccc;

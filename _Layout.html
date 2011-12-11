@@ -100,6 +100,9 @@
 		</div>
 		<article class="article">
 		{{ page.content }} 
+        <span class="article_separator"></span>
+        <div id="disqus_thread"></div>
+        <a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a>
         </article>
 	</div>
 </div>
@@ -129,6 +132,16 @@
 	//$(document).ready(function() {$().cssParentSelector();});
 </script>	
 
+  <script type="text/javascript">
+            var disqus_shortname = 'tnapswiki';
+            /* * * DON'T EDIT BELOW THIS LINE * * */
+            (function() {
+                var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+                dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+                (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+            })();
+        </script>
+
 <!-- end scripts -->
 <!-- Asynchronous Google Analytics snippet. Change UA-XXXXX-X to be your site's ID.
        mathiasbynens.be/notes/async-analytics-snippet -->
@@ -144,5 +157,6 @@
     <script defer src="//ajax.googleapis.com/ajax/libs/chrome-frame/1.0.3/CFInstall.min.js"></script>
     <script defer>window.attachEvent('onload',function(){CFInstall.check({mode:'overlay'})})</script>
   <![endif]-->
+  
 </body>
 </html>
