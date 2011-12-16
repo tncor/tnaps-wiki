@@ -1,0 +1,27 @@
+h2. Supported Environments
+
+TNAPS engine can load components written in different languages inside one application, so that they can collaborate easily. This allows to construct needed functionality easily from existing blocks.
+
+Each language has its own Environment Adapter that hosts components of this type. 
+
+h3. Currently Supported Environments
+
+h4. .NET 
+
+TNAPS uses the following platform to launch .NET components:
+
+* .NET 4 on Windows XP SP3 and above
+* Mono 2.10.1 on Mac OSX and Linux
+
+h4. Java
+
+TNAPS uses the following JVMs to host components written in Java:
+
+* Oracle JVM
+* OpenJDK
+
+TNAPS version supporting Java currently available in private testing only. 
+
+h3. Environments to be Supported
+
+We are planning to create Environment Adapter for Ruby, Python and JavaScript. The DLR implementations of these languages will be used to host scripts.

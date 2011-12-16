@@ -9,7 +9,7 @@ Click the link for your operating system to see instructions on how to install T
 
 h3(#startup).  Starting up
 
-Each operating system have some notes upon launching TNAPS, so you should consider above installation articles. However in general starting TNAPS in Linux / Mac OS X looks like the following:
+Each operating system have some notes upon launching TNAPS, so you should consider above installation articles first. However, in general starting TNAPS in Mac OSX / Linux looks like the following:
 
 ```bash
 # inside tnaps dir
@@ -24,7 +24,7 @@ For Windows you should start tnaps service:
 
 h3. Check if it Works
 
-The easiest way to test whether TNAPS is working is to use the curl command-line tool. Now that you have TNAPS running on your local machine, run this command:
+The easiest way to test whether TNAPS is working is to use the @curl@ command-line tool. Now that you have TNAPS running on your local machine, run this command:
 
 ```bash
 curl http://localhost:9095/tnaps/library/components/names.json
@@ -43,7 +43,7 @@ This result means two things:
 
 h3. Management Center 
 
-There is more than just curl in TNAPS management. TNAPS offers a complete Management Center web application. To access it navigate your [[modern browser|Supported Browsers]] to the following:
+There is more than just @curl@ in TNAPS management. TNAPS offers a complete Management Center web application. To access it navigate your [[modern browser|Supported Browsers]] to the following:
 
 ```
 http://localhost:9095/tnaps/console
