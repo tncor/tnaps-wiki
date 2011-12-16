@@ -1,0 +1,40 @@
+h2. Component Package
+
+TNAPS components uses special file called _package_. It has extension @tnpack@ and usually name of the file contains name (or short name) of the included component and its version:
+
+```
+sample
+```
+
+Although @tnpack@ extensions is used, it is a specially created zip archive containing all the files TNAPS needs to install component into the library and load it correctly.
+
+h3. Contents
+
+In order for you to understand package here is the typical contents of it:
+
+@manifest.xml@ - Contains all metadata about the component. This file contains digital signature of the whole package.
+
+@component.info@ - Contains additional information
+
+@Your.Assembly.With.Logic.dll@ - Some real logic your have implemented in component
+
+@resources/your-persistance-file.ext@ - Any number of 
+
+h3. Manifest
+
+h3. Implementation files
+
+h3. Persistance
+
+
+h3. Sample
+
+In case you want to grab one sample package and surge it into pieces, here is one you can start with:
+
+[[/package.tnpack]]
+
+Just rename it into zip and extract anywhere you like. 
+
+If you want to rebuild it, you should check ouy sample repository 
+
+[[github.com/tncor/tnaps-samples]]

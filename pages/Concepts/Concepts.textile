@@ -15,7 +15,7 @@ This is a _very_ brief summary. The detailed explanation follows below.
 
 h3. Component
 
-In TNAPS everything begins with the Component. Component is the _only_ part of TNAPS that contains executable logic of the application. This executable logic can be written in one of the [[supported hosting environments|Supported Hosting]] (currently .NET and Java). [[Manifest]] of the [[component package]] determines which environment to create for the component.
+In TNAPS everything begins with the Component. Component is the _only_ part of TNAPS that contains executable logic of the application. This executable logic can be written in one of the [[supported hosting environments|Supported Hosting]] (currently .NET and Java). Manifest of the [[component package]] determines which environment to create for the component.
 
 Each hosting environment has its own adapter. During application execution TNAPS determines which component should be called and loads its code into the appropriate environment adapter. 
 

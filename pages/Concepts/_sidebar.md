@@ -1,8 +1,6 @@
 [[Home]] > [[Concepts]]
 
 * [[Components]]
-  * [[Manifest|Component Manifest]]
-  * [[Component]]
   * [[Component Package]]
 * [[Applications]]
   * [[Manifest|Application Manifest]]
