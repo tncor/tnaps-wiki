@@ -1,0 +1,36 @@
+h2. TNAPS Management API
+
+API is RESTful and can be called from @curl@ or using any special client. This API is used directly by TNAPS Management Center. There is no any special or hidden API.
+
+h3. Overview
+
+TNAPS Management API contains a number of endpoints.
+
+h3. Data Structures
+
+Depending on feature and required information XML or JSON data representation is used.
+
+h4. Component identity
+
+Each component is defined by the following triada:
+
+```
+name, version, signature
+```
+
+h3(#LibraryManager).  LibraryManager Endpoint
+
+Provides methods for interaction with TNAPS Library.
+
+h4. GetComponents
+
+Returns the names of installed components.
+
+```
+GET /tnaps/library/components/names.json
+```
+
+*Parameters*:
+*Returns*: @System:String[]@
+*Respones Format*: @application/json@
+*Remarks*: Name of the component is Name partition of component identity.

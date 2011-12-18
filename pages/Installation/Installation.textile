@@ -30,7 +30,7 @@ The easiest way to test whether TNAPS is working is to use the @curl@ command-li
 curl http://localhost:9095/tnaps/library/components/names.json
 ```
 
-This actually calls TNAPS [[management API|Management REST API]] and requests list of installed [[Components]]. If it is a fresh install of TNAPS with only [[standart components]] installed you should get the following result:
+This actually calls TNAPS [[management API|Management API]] and requests list of installed [[Components]]. If it is a fresh install of TNAPS with only [[standart components]] installed you should get the following result:
 
 ```javascript
 ["HostProvider"]
