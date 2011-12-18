@@ -8,6 +8,8 @@ name = ARGV[0]
 yuml_name = name + ".yuml"
 img_name = name + ".png"
 
+direction = ARGV[1]
+
 def get_file_as_string(filename)
 	data = ''
 	f = File.open(filename, "r") 
@@ -20,7 +22,7 @@ end
 
 # POST DSL up to yUML
 #c = Curl::Easy.new("http://yuml.me/diagram/scruffy/class/")
-c = Curl::Easy.new("http://yuml.me/diagram/scruffy;dir:LR;scale:80;/class/")
+c = Curl::Easy.new("http://yuml.me/diagram/scruffy;dir:" + direction  + ";scale:80;/class/")
 c.multipart_form_post = true
 file_data = get_file_as_string yuml_name
 c.http_post(Curl::PostField.content("dsl_text",file_data))

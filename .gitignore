@@ -6,3 +6,4 @@ bin
 .bundle
 Gemfile.lock
 .settings.xml
+/.komodotools/

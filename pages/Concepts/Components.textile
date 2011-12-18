@@ -1,0 +1,27 @@
+h2. Components
+
+This article provides detailed explanation about components in TNAPS.
+
+Note: This article is incomplete yet. You can help to improve it!
+
+h3. Black Box Approach
+
+In order to construct highly modular and reusable systems component is presented as a black-box:
+
+Component may depend from other components, but those relations are not visible from outside. This approach is one of the principles of component-driving application developement with TNAPS.
+
+h3. Properties
+
+Every component can define set of properties. TNAPS initialise those properties either to default or custom values before component execution.
+
+For example, database connector component may require to specify connection string and server address properties in order to operate correctly. 
+
+h4. Property Mapping
+
+Along with definition of custom properties you may need to expose properties of the inner components outside. Although, those properties will appear as properties of your component, they will be automatically mapped by TNAPS into properties of dependency component.
+
+Property Mapping is extremely useful feature.  Let us consider the following example:
+
+You are developing a component that produces some great reports from database. Let it be @report-maker@ component. @report-maker@ depends on @database-connector@ component to grab data. So, end-user or other component that use our @report-maker@ needs to provide connection string to @database-connector@. According to black-box approach external users do not know what's inside of the component. So we can map @database-connector.connection-string@ property into @report-maker.connection-string@. As a result users of @report-maker@ will not aware about actual data access component and will use only the interface of our component.
+
+Mapped properties can have _any_ name and it can be different from source property. The only thing that can not be changed is data type.

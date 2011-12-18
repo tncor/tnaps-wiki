@@ -4,34 +4,36 @@ This section is a high level overview of concepts, technology choices, and imple
 
 TNAPS 3 uses the following main concepts:
 
-# Component
-# Application
-# Library
-# Instance
+* Component
+* Application
+* Library
+* Instance
 
-Instances are executable copies of Applications stored along with Components in TNAPS Library. 
+The _very_ brief summary about them is the following:
 
-This is a _very_ brief summary. The detailed explanation follows below.
+_Instances_ are executable copies of _Applications_ stored along with _Components_ in TNAPS _Library._ 
+
+The detailed explanation follows below.
 
 h3. Component
 
-In TNAPS everything begins with the Component. Component is the _only_ part of TNAPS that contains executable logic of the application. This executable logic can be written in one of the [[supported hosting environments|Supported Hosting]] (currently .NET and Java). Manifest of the [[component package]] determines which environment to create for the component.
+In TNAPS everything begins with the Component. Component is the _only_ part of TNAPS that contains executable logic of the application. This executable logic can be written in one of the [[supported hosting environments|Supported Hosting]] (currently .NET and Java).
 
-Each hosting environment has its own adapter. During application execution TNAPS determines which component should be called and loads its code into the appropriate environment adapter. 
+The manifest file inside [[component package]] determines which environment should be used for the component. During application execution TNAPS determines next component to be called and loads its code into the appropriate environment adapter. 
 
 !img/diagrams/env-adapter.png!
 
-Components use [[Message Transport Layer]] to communicate within application. This communication works between .NET and Java components as well. So, you can create TNAPS application from components written in different languages.
+Components use [[Message Transport Layer]] to communicate within application. This communication works between .NET and Java components as well. So, you can build TNAPS application from components written in different languages.
 
 h4. What's Inside
 
-Component is not just a set of .NET Assemblies and .JAR files, but a [[package|Component Package]] that contains binary resources and all other assets component logic uses during execution.
+Component is not just a set of .NET Assemblies and .JAR files, but a [[package|Component Package]] that contains binary resources and all other assets that component logic uses during execution.
 
-TNAPS comes with a set of default components that are most often used in every server application. For example, Hosting Component provides functionality to  expose other components through REST or SOAP services.
+TNAPS comes with a set of [[default components|Default Components]] that are most often used in every server application. For example, Hosting Component provides functionality to  expose other components through REST or SOAP services.
 
 h4. Making Components 
 
-You can use Visual Studio, Eclipse or any other IDE to code your component logic. Packaging component into distributable package needs calling for [[TNAPS SDK tools|SDK]].
+You can use Visual Studio, Eclipse, Netbeans or any other IDE to code your component logic. Packaging component into distributable package requires calling for [[TNAPS SDK tools|SDK]].
 
 To dive deeply into component ideas go to [[Components]].
 
@@ -63,7 +65,7 @@ Read more details about library in the [[special article|Library]].
 
 h3. Instance
 
-Application is stored in a Library. It is like a _template_ that is used to create Instances. Instance is a one copy of application with configuration created to execute it. 
+Application is stored in a Library. It is like a _template_ that is used to create Instances. Instance is a copy of application with configuration created to execute it. 
 
 One application in TNAPS Library can be used to create as many Instances as needed. For example, it can be the same CRM application, but hosted on different ports, using different datasources and serving different clients:
 
@@ -71,16 +73,15 @@ One application in TNAPS Library can be used to create as many Instances as need
 
 For every Instance you launch TNAPS executes separate process, so all Instances work independently.
 
-Instance is binded strictly to exact version of an application. So if you have updated app in Library, existing instances reference previous version. TNAPS does not do automatic update of the instances as App may change to settings schema in the new version and existing properties would not be transfered.
+Instance is binded to the exact version of the application. So if you have updated app in Library, existing instances reference previous version. TNAPS does not do automatic update of the instances as App may change to settings schema in the new version and existing properties would not be transfered.
 
 h3. Core
 
 TNAPS has a relatively small and robust kernel build on .NET / Mono. Almost all functionality is created using [[standart components]] bundled with TNAPS. It means that standart facilities application servers are known to provide are implemented itself as components. It gives more flexibility for the developer when creating any type of architecture for TNAPS Application. 
  
-
 h3. Complete Schema
 
-We have merged everything disscussed
+We have merged everything disscussed into one signle diagram.
 
 !img/diagrams/architecture.png!
 

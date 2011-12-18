@@ -1,0 +1,4 @@
+[Component Package{bg:orange}]0..*-<>->[Dependent .tnpack's],
+[Component Package]0..*++->[Media assets],
+[Component Package]1..*++->[Set of DLLs or JARs],
+[Component Package]1++->[Metadata]

@@ -1,40 +1,45 @@
 h2. Component Package
 
-TNAPS components uses special file called _package_. It has extension @tnpack@ and usually name of the file contains name (or short name) of the included component and its version:
+TNAPS components use special file called _package_ to store all of the data for easy distribution.This file has @.tnpak@ extension  and usually name of the file contains name (or short name) of the included component and its version (however, TNAPS does not take any assumptions about package contents based on its name):
 
 ```
-sample
+currency-converter-1.0.tnpack
 ```
 
-Although @tnpack@ extensions is used, it is a specially created zip archive containing all the files TNAPS needs to install component into the library and load it correctly.
+Although @.tnpack@ extensions is used, _package_  is just a specially created @zip@ archive containing all the files TNAPS needs to install component into the library and load it correctly.
 
 h3. Contents
 
-In order for you to understand package here is the typical contents of it:
+!img/diagrams/component-package.png!
 
-@manifest.xml@ - Contains all metadata about the component. This file contains digital signature of the whole package.
+Main place of component metadata is @manifest.xml@ file. Along with all of the descriptions and dependencies it contains digital signature of the whole _package_. Digital signature allows developer verification and package integrity checking.
 
-@component.info@ - Contains additional information
+DLL or JAR files contain executable logic your have implemented in component.
 
-@Your.Assembly.With.Logic.dll@ - Some real logic your have implemented in component
+Media assets are arbitary files and directories component logic needs to run (media files, persistance, reference data etc.).
 
-@resources/your-persistance-file.ext@ - Any number of 
+Component may depend from other components. We can rely on the end-user to install required components. Alternatively, we can include entire packages into our component. So that TNAPS should install included dependencies automatically.
 
-h3. Manifest
+Note: If you delete installed component from Library, dependent components from its package will remain installed.
 
-h3. Implementation files
+h3. Installation
 
-h3. Persistance
+Component can be installed using browser through Management Center or directly through @curl@ with POST argument containing @tnpack@ data. See TNAPS Management API to check how to do it.
 
+When you request  installation of a components TNAPS do the following:
+
+# Checks package manifest and determines that this package contains valid TNAPS component.
+# Extracts package contents into TNAPS Library folder (ex.: @/usr/share/tn/server/lib/comps/component_name_version@)
+# Detects @tnpak@ files inside package and installs them too
 
 h3. Sample
 
 In case you want to grab one sample package and surge it into pieces, here is one you can start with:
 
-[[/package.tnpack]]
+<a href="/attach/calculator-1.0.tnpak">calculator-1.0.tnpak</a>
 
 Just rename it into zip and extract anywhere you like. 
 
-If you want to rebuild it, you should check ouy sample repository 
+If you want to rebuild it, you can check sample repository and rebuild everything yourself:
 
-[[github.com/tncor/tnaps-samples]]
+[[http://github.com/tncor/tnaps-samples]]
