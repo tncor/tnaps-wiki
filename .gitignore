@@ -7,3 +7,4 @@ bin
 Gemfile.lock
 .settings.xml
 /.komodotools/
+/tnaps-wiki.komodoproject
